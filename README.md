@@ -1,4 +1,4 @@
-# 📦 Olist E-Commerce Analytics: Supply Chain & Sentiment Architecture 
+# Olist E-Commerce Analytics: Supply Chain & Sentiment Architecture 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg) ![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-yellow.svg) ![NLP](https://img.shields.io/badge/NLP-Text_Analysis-green.svg) ![Data Architecture](https://img.shields.io/badge/Architecture-Star_Schema-red.svg)
 
 > **An end-to-end data engineering and analytics pipeline transforming 100,000+ fragmented e-commerce records into a unified Data Warehouse and Business Intelligence Dashboard to optimize last-mile logistics and customer retention.**
@@ -13,7 +13,7 @@ This project acts as a complete **Data Engineering and Analytics Pipeline**. It 
 
 ---
 
-## 🏗️ System Architecture & Data Strategy
+## System Architecture & Data Strategy
 To prevent system crashing and massive data redundancy, the raw `.csv` files were modeled using a **Star Schema** architecture, mimicking a true enterprise Data Warehouse environment.
 
 ```mermaid
@@ -66,7 +66,7 @@ To categorize qualitative customer feedback, I engineered a custom NLP script to
 
 ---
 
-## 💡 Key Business Insights & ROI
+## Key Business Insights & ROI
 
 Through the unified data model and text analysis, several critical bottlenecks were identified:
 
@@ -100,7 +100,7 @@ Olist_ECommerce_Optimization/
 
 ---
 
-## ⚙️ Setup & Local Installation Guide
+## Setup & Local Installation Guide
 
 Follow these steps to replicate the Python environment and run the data pipeline on your local machine.
 
@@ -139,7 +139,7 @@ Due to strict GitHub file size limits, the raw relational database is not hosted
 
 ---
 
-## 🚀 Future Scope & Scaling
+## Future Scope & Scaling
 To scale this architecture for a live production environment, I recommend the following upgrades:
 1. **Cloud Migration:** Transition the local `.csv` pipeline into an AWS S3 data lake, queried via Amazon Athena or Snowflake.
 2. **LLM API Integration:** Replace the keyword-based NLP script with a LangChain/OpenAI API connection to perform nuanced, automated sentiment summarization as reviews stream in live.
